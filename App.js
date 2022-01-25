@@ -1,0 +1,34 @@
+import React from 'react';
+import {
+    StyleSheet,
+    Text,
+    View,
+    Button,
+    Alert
+} from 'react-native';
+
+export default class App extends React.Component {
+  render() {
+    return (
+      <View style={styles.container}>
+        <Text>Настя - котик!</Text>
+        <Text>А Майло - собачка!</Text>
+        <Button
+            onPress={() => {
+                Alert.alert('А там!');
+            }}
+            title="Войти"
+        />
+      </View>
+    );
+  }
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
